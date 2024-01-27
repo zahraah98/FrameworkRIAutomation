@@ -1,0 +1,4 @@
+cypress/Login.cy.js
+cypress/videos
+cypress/reports
+node_modules
