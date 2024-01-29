@@ -1,0 +1,17 @@
+describe('Checks Projects Page functionality', () => {
+
+    beforeEach(function () {
+        cy.login('baby')
+    })
+
+    it('Create purchase provider', () => {
+
+        empActions.createEmployee();
+    })
+
+    it('Search provider', () => {
+
+        empActions.searchEmployee();
+
+    })
+    

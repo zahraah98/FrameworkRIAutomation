@@ -7,7 +7,7 @@ describe('Checks Employee Page functionality', () => {
         cy.login('baby')
     })
 
-    it.only('Create Employee Account', () => {
+    it('Create Employee Account', () => {
 
         empActions.createEmployee();
     })
@@ -17,6 +17,7 @@ describe('Checks Employee Page functionality', () => {
         empActions.searchEmployee();
 
     })
+    
 
     
 })
