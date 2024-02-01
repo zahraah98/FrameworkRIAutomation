@@ -24,9 +24,9 @@ class purchase {
         cy.xpath(this.providerDescription).type(description);
     }
     CreateProvider(pname, pemail,phoneNumber,description){
-        this.purchaseTabLocator.click()
-        this.providerTabLocator.click()
-        this.createButton.click()
+        cy.xpath(this.purchaseTabLocator).click()
+        cy.xpath(this.providerTabLocator).click()
+        cy.xpath(this.createButton).click()
         this.fillproviderName(pname);
         this.fillproviderEmail(pemail);
         this.fillproviderPhoneNumber(phoneNumber)
@@ -34,10 +34,10 @@ class purchase {
         this.createProviderButton.click()
     }
     deleteProvider(){
-        this.deleteProvider.click()
+        cy.xpath(this.deleteProvider).click()
     }
     searchForProvider(providerName){
-        this.searchForProvider.click().type(providerName)
+        cy.xpath(this.searchForProvider).type(providerName)
     }
 }
 export default new purchase();  
