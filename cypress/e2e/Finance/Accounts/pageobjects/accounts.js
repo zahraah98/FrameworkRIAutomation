@@ -1,13 +1,13 @@
-class customers {
+class accounts {
     constructor() {
-        this.salesTabLocator= "//p[normalize-space()='Sales']"
-        this.customersTabLocator = "//p[normalize-space()='Customers']"
+        this.financeTabLocator= "//p[normalize-space()='Sales']"
+        this.accountsTabLocator = "//p[normalize-space()='Customers']"
         this.createButton= "//p[normalize-space()='Create']"
-        this.customerName="//body[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]"
-        this.customerEmail="//body[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/form[1]/div[1]/div[2]/div[1]/div[1]"
-        this.customerPhoneNumber="//body[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/form[1]/div[1]/div[3]/div[1]/div[1]"
-        this.createCustomerButton="//div[contains(@class,'modal-button')]//p[contains(text(),'Create')]"
-        this.deleteCustomer="//div[contains(@class,'column-layout')]//div[1]//div[2]//div[1]//div[2]"
+        this.accountName="//body[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]"
+        this.accountEmail="//body[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/form[1]/div[1]/div[2]/div[1]/div[1]"
+        this.accountPhoneNumber="//body[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/form[1]/div[1]/div[3]/div[1]/div[1]"
+        this.accountCustomerButton="//div[contains(@class,'modal-button')]//p[contains(text(),'Create')]"
+        this.deleteAccount="//div[contains(@class,'column-layout')]//div[1]//div[2]//div[1]//div[2]"
         this.serachBox="//input[contains(@placeholder,'Search')]"
     }
     fillcustomerName(pname) {
@@ -35,4 +35,4 @@ class customers {
         cy.xpath(this.searchForcustomer).click().type(customerName)
     }
 }
-export default new customers();  
+export default new accounts();  
