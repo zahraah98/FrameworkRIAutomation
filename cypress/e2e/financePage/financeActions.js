@@ -41,5 +41,13 @@ class FinanceActions {
         cy.xpath(element.creatBtn2).click()
 
     }
+    createBudgets() {
+        cy.get(element.financeMenu).click({ force: true })
+        cy.get(element.budgetsSubmenu).click({ force: true })
+        cy.xpath(element.budgetsBtn).click({ force: true })
+        cy.get(element.createBtn).click()
+        cy.xpath(element.titleTextBox).click().type("test")
+    }
+
 }
 export default FinanceActions;
