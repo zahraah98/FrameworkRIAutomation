@@ -1,0 +1,28 @@
+module.exports = {
+
+    financeMenu: "p:contains('Finance')",
+    accountsSubmenu: "p:contains('Accounts')",
+    accountsBtn: '//a[@href="/ri-business/finance/account-list"]',
+    createBtn:"p:contains('Create')",
+    accounttitleTextBox:'//div/label[contains(text(),"Account title")]/../div/div/input',
+    accountnoTextBox:'//div/label[contains(text(),"Account Number")]/../div/div/input',
+    banknameTextBox:'//div/label[contains(text(),"Bank Name")]/../div/div/input',
+    descriptionTextBox:'//div/p[contains(text(),"Description")]/../div/textarea',
+    creatBtn2:"(//p[contains(text(),'Create')])[2]",
+    transactionsSubmenu: "p:contains('Transactions')",
+    transactionsBtn: '//a[@href="/ri-business/finance/transaction-list"]',
+    totalTextBox:'//div/label[contains(text(),"Total")]/../div/div/input',
+    billsSubmenu: "p:contains('Bills')",
+    billsBtn: '//a[@href="/ri-business/finance/bill-list"]',
+    createbillsBtn:"p:contains('Create')",
+    titleTextBox: '//div/label[contains(text(),"Title")]/../div/div/input',
+    budgetsDropdown:'//input[@placeholder="Budget"]',
+    budgetsdropdownoption:':nth-child(8) > .dropdown-options-container > .pagination-container > :nth-child(1) > .dropdown-option-text',
+    budgetsSubmenu: "p:contains('Budgets')",
+    budgetsBtn: '//a[@href="/ri-business/finance/budget-list"]',
+    reportsSubmenu: "p:contains('Reports')",
+    reportsBtn: '//a[@href="/ri-business/finance/report-list"]',
+    statisticsSubmenu: "p:contains('Statistics')",
+    statisticsBtn: '//a[@href="/ri-business/finance/statistics"]',
+    
+  }
