@@ -1,4 +1,4 @@
-import FinanceActions from "./FinancePage/financeActions";
+import FinanceActions from "./financePage/financeActions";
 
 const finActions = new FinanceActions;
 describe('Checks Finance Page functionality', () => {
